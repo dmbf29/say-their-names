@@ -9,7 +9,7 @@
 body {
   font: normal 16px/1.5 "Helvetica Neue", sans-serif;
   background: black;
-  color: black;
+  color: #0E0000;
   overflow-x: hidden;
   padding-bottom: 50px;
 }  /* INTRO SECTION
@@ -17,7 +17,7 @@ body {
 
 .intro {
   background: white;
-  padding: 100px 0;
+  padding: 64px 0;
 }
 
 .container {
@@ -37,7 +37,8 @@ h1 {
 
 .timeline ul {
   background: black;
-  padding: 50px 0;
+  padding: 0;
+  margin-bottom: 24px;
 }
 
 .timeline ul li {
@@ -146,6 +147,16 @@ time {
   .timeline ul li:nth-child(even) .name-box {
     left: -289px;
     /*250+45-6*/
+  }
+  .name-box-header {
+    flex-direction: column;
+    margin-bottom: 8px;
+  }
+  .name-box-header h5 {
+    margin-bottom: 2px;
+  }
+  time {
+    margin-left: 0;
   }
 }
 

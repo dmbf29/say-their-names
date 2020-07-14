@@ -10,6 +10,44 @@
 @import "components/index";
 @import "pages/index";
 
-.font-lighter {
-  font-weight: lighter;
+
+// body {
+//   font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+//   background: black;
+//   color: $gray;
+//   overflow-x: hidden;
+//   padding-bottom: 50px;
+// }
+
+.font-bolder {
+  font-weight: bolder;
 }
+
+.external-link {
+  margin-left: 8px;
+  opacity: 0;
+  color: $normal-gray;
+  transition: opacity 1s;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  &:hover {
+    cursor: pointer;
+    color: $gray
+  }
+}
+
+.name-box {
+  position: relative;
+  &:hover {
+    .external-link {
+      opacity: 1;
+    }
+  }
+}
+
+.name-box-header {
+  display: flex;
+  justify-content: space-between;
+}
+

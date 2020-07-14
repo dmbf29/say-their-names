@@ -49,6 +49,7 @@
 
 # Use sprockets for JS requires
 activate :sprockets
+activate :metaman, host: 'http://www.saytheirnames.xyz/'
 
 # Build-specific configuration
 configure :build do

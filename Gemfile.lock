@@ -70,6 +70,8 @@ GEM
       uglifier (~> 3.0)
     middleman-gh-pages (0.3.1)
       rake (> 0.9.3)
+    middleman-metaman (0.1.9)
+      middleman-core (>= 4.2.1)
     middleman-sprockets (4.1.1)
       middleman-core (~> 4.0)
       sprockets (>= 3.0)
@@ -88,8 +90,6 @@ GEM
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     sass (3.4.21)
-    sass-globbing (1.1.5)
-      sass (>= 3.1)
     servolux (0.13.0)
     sprockets (3.7.1)
       concurrent-ruby (~> 1.0)
@@ -109,8 +109,8 @@ PLATFORMS
 DEPENDENCIES
   middleman (~> 4.2)
   middleman-gh-pages
+  middleman-metaman
   middleman-sprockets
-  sass-globbing
   tzinfo-data
   wdm (~> 0.1.0)
 
