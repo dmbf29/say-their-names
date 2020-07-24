@@ -10,10 +10,12 @@
       <li>
         <div class="name-box">
           <div class="name-box-header">
-            <h5><%= person.name %></h5>
+            <h5>#<%= person.name %></h5>
             <time><%= person.location %> - <%= person.year %></time>
           </div>
           <p><span class="font-bolder">What they were doing: </span><%= person.doing %>
+          </p>
+          <p><span class="font-bolder">How they were killed: </span><%= person.killing %>
           </p>
           <p><span class="font-bolder">Action taken:</span> <%= person.action %>
           </p>
