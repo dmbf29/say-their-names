@@ -6,7 +6,7 @@
 </section>
 <section class="timeline">
   <ul>
-    <% data.names.each do |person| %>
+    <% data.names.sort_by(&:year).reverse.each do |person| %>
       <li>
         <div class="name-box">
           <div class="name-box-header">
