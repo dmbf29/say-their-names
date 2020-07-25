@@ -23,6 +23,10 @@
         items[i].classList.add("in-view");
       }
     }
+    const formMark = document.querySelector('.js-powrMark');
+    if (formMark) {
+      formMark.style.display = 'none'
+    }
   }
 
   // listen for events
@@ -30,6 +34,13 @@
   window.addEventListener("resize", callbackFunc);
   window.addEventListener("scroll", callbackFunc);
 
-})();
+  const btnSuggest = document.querySelector('.btn-suggest')
+  if (btnSuggest) {
+    btnSuggest.addEventListener('click', (event) => {
+      const form = document.querySelector('.suggest-form')
+      form.classList.toggle('hidden')
+    })
+  }
+ })();
 
 //= require_tree .
