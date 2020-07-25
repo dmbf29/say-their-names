@@ -11,7 +11,7 @@
         <div class="name-box">
           <div class="name-box-header">
             <h5>#<%= person.name %></h5>
-            <time><%= person.location %> - <%= person.year %></time>
+            <time><%= person.year %></time>
           </div>
           <p><span class="font-bolder">What they were doing: </span><%= person.doing %>
           </p>
@@ -19,6 +19,7 @@
           </p>
           <p><span class="font-bolder">Action taken:</span> <%= person.action %>
           </p>
+          <time style="margin-left: 0"><i class="fas fa-map-marker-alt"></i> <%= person.location %></time>
           <% link_to person.link, class: 'external-link', target: '_blank' do %>
             <i class="fas fa-external-link-alt"></i>
           <% end %>

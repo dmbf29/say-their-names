@@ -64,9 +64,17 @@
   h5 {
     white-space: nowrap;
   }
-  time {
-    font-size: 13px;
+}
+
+time {
+  font-size: 13px;
+  i {
+    color: $normal-gray
   }
+}
+
+p {
+  margin-bottom: 8px
 }
 
 .hidden {
