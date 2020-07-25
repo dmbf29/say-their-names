@@ -24,6 +24,13 @@
   color: #0E0000;
 }
 
+.intro {
+  img {
+    filter: invert(1);
+  }
+}
+
+
 .external-link {
   margin-left: 8px;
   opacity: 0;
@@ -64,6 +71,18 @@
 
 .hidden {
   display: none;
+}
+
+.timeline ul li:first-child::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: inherit;
 }
 
 

@@ -11,12 +11,13 @@ body {
   background: black;
   color: #261919;
   overflow-x: hidden;
+  width: 100vw;
 }  /* INTRO SECTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .intro {
-  background: white;
   padding: 64px 0;
+  color: white;
 }
 
 .container {
